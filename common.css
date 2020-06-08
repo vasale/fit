@@ -1,0 +1,96 @@
+@font-face {
+    font-family: 'Cuprum Bold';
+    src: url("");
+    src: url("") format('eot');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cuprum Bold';
+    src: url("") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cuprum Bold';
+    src: url("") format('svg');
+    src: url("") format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body, select, input, textarea {
+}
+
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6,
+p {
+	margin-top: 0;	/*Перекрываю normalize, есть ли смысл у заголовка делать отступ сверху?*/
+}
+
+h2 { 
+	margin: 5px 0;
+	color: #7B3A00;
+	font: bold 20px "Segoe UI", sans-serif;
+	text-transform: uppercase;
+}
+h3 { 
+	margin: 3px 0;
+	color: #7B3A00;
+	font: normal 18px "Segoe UI", sans-serif;
+}
+h4 { 
+	margin: 3px 0;
+	padding-left: 10px;
+	color: #333;
+	font: normal 14px "Cuprum Bold", sans-serif;
+}
+p {
+	margin: 0;
+	padding: 0;
+	color: #333;
+	font: normal 16px "Segoe UI", sans-serif;
+}
+a {
+	text-decoration: underline;
+	color: #7A3900;
+}
+a:active {}
+a:visited {}
+a:focus {}
+a:hover {text-decoration: none}
+
+p {}
+
+nav ul,
+nav li {
+	margin:0;
+	padding:0;
+}
+
+
+/*
+#content {
+	background: rgba(255,255,255,0.5);
+	-pie-background: rgba(255,255,255,0.5);
+
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	border-radius: 10px 10px 10px 10px;
+
+	-moz-box-shadow: 3px 3px 5px 0, -3px 3px 5px 0;
+	-webkit-shadow: 3px 3px 5px 0, -3px 3px 5px 0;
+	box-shadow: 3px 3px 5px 0, -3px 3px 5px 0;
+
+	-moz-box-shadow: 3px 3px 5px 0;
+	-webkit-shadow: 3px 3px 5px 0;
+	box-shadow: 3px 3px 5px 0;
+}
+*/

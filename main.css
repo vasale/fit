@@ -1,0 +1,131 @@
+header {
+}
+
+#main {
+}
+
+footer {
+}
+
+li.active {
+}
+
+/*Логотип*/
+.logo {
+	float:left;
+	height: 120px;
+	clear:left;
+	text-decoration:none; 
+	line-height: 0;
+	padding: 0;
+}
+footer .logo {height: 63px}
+.logo strong {
+	position:absolute;
+	top:-999em;
+	left:-999em;
+	width:0;
+	height:0;
+	font-size:0;
+	line-height:0;
+	text-indent:-999em;
+	overflow:hidden;
+}
+#content h2 {margin: 23px 0}
+
+header #mainmenu ul {
+	float: right;
+	margin-top: 16px;
+}
+header #mainmenu ul li {
+	float: left;
+	color: #FFF;
+	font: normal 18px "Segoe UI", sans-serif;
+}
+ul#menu {list-style-type: none}
+header #mainmenu ul#menu {margin-top: 34px}
+header #mainmenu ul#menu li a {
+	font-size:16px;
+	color: #592B00;
+	text-decoration: none;
+}
+header #mainmenu ul#menu li a:hover, header #mainmenu ul#menu li.active a {color: #FFF}
+li .icon {
+	float: left;
+	height: 33px;
+	width: 44px;
+	padding: 0;
+	margin: 0 4px 0 8px;
+	background: url("icon.png") left top no-repeat;
+}
+header li .icon {margin-top: -7px}
+li a:hover .icon, li.active a .icon {background: url("icon_hover.png") left top no-repeat}
+header #mainmenu ul li#phone {
+	font: normal 22px "Cuprum Bold", sans-serif;
+	background: url("phone.png") left center no-repeat;
+	padding: 13px 140px 0px 60px;
+	margin-top: -8px;
+}
+header #mainmenu ul li#phone span {font-size: 20px}
+header #mainmenu ul li#adress {
+	font: normal 19px/1 "Segoe UI", sans-serif;
+	background: url("adress.png") right bottom no-repeat;
+	padding: 0 34px 0 28px;
+	margin-top: 0px;
+}
+header #mainmenu ul li#adress span {font-size: 16px}
+
+#sidebar2 #photo {
+	padding-left: 68px;
+	margin: 6px 0 0 16px;
+	background: url("photo.png") 30px 7px no-repeat;
+	font: bold 20px "Segoe UI", sans-serif;
+	color: #7A3900;
+}
+#baner li {
+	float: left;
+	list-style-type: none;
+	padding: 10px 4px 0 4px;
+}
+
+#content table {width: 100%}
+#content table, #content table td, #content table tr, #content table th {
+	background: #FF7F00;
+	border: 3px solid #FFF;
+	color: #FFF;
+	text-align: center;
+	padding: 2px 4px;
+}
+#content table th {background:#7B3A00}
+
+#feedback {padding-top: 10px}
+#feedback h2 {
+	font: normal 18px "Segoe UI", sans-serif;
+	text-transform: none;
+}
+#feedback h2 span {font-size: 14px}
+form#feedback tr {min-height: 43px}
+#pagination{
+	height: 30px;
+	margin: 0 auto;
+}
+#pagination li{
+	float:left;
+	margin-left: 6px;
+	list-style-type: none;
+}
+#pagination li a {text-decoration: none}
+#pagination li a:hover {color: #333}
+#cupon {
+	height: 496px;
+	width: 643px;
+	background: url("") no-repeat;
+}
+#cupon table {
+	position: relative;
+	top: 140px;
+	left: 30px;
+}
+
+footer ul#menu {float: right}
+footer ul#menu li {float: left}

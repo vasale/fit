@@ -1,0 +1,84 @@
+.slider {
+	float:left;
+	width: 100%;
+	position:relative;
+	margin-top: -12px;
+	background: none;
+}
+
+.sliderContent {
+	float:left;
+	width:100%;
+	clear:both;
+	position:relative;
+	overflow:hidden;
+	/*left:1.2%;
+	top:3.1%;*/
+}
+
+.sliderArrows a {
+	display:block;
+	text-indent:-9999px;
+	outline:none;
+	z-index:50;
+	width:38px;
+	height:68px;
+	position:absolute;
+	top: 40%;
+}
+
+.prev {
+	left: -1.8%;
+	background: url("") 0px -4px no-repeat;
+}
+
+.prev:hover {background-position: 0px -82px}
+
+.next {
+	right: -1.8%;
+	background: url("") -49px -4px no-repeat;
+}
+
+.next:hover {background-position: -49px -82px}
+
+.sliderContent .item {
+	position:absolute;
+	top: 0px;
+	width: 100%;
+}
+
+.sliderBullets {
+	position:absolute;
+	top:80%;
+	left:68%;
+	z-index:50;
+}
+
+.sliderBullets a {
+	display:block;
+	float:left;
+	text-indent:-9999px;
+	outline:none;
+	margin-left:-10px;
+	width:73px;
+	height:80px;
+	background: url("") left 0px no-repeat;
+}
+.sliderBullets a:hover {background-position: left -80px}
+.sliderBullets .active, .sliderBullets a.active:hover {background-position: left -160px}
+.sliderBullets a#button_1 {background-image:url("")}
+.sliderBullets a#button_2 {background-image:url("")}
+.sliderBullets a#button_3 {background-image:url("")}
+
+.sliderContent a {
+outline:none;
+}
+
+.slider a {
+color:#fff;
+}
+
+.slider a img {
+border: none;
+}
+.sliderContent .item img {width: 100%}

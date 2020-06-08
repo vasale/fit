@@ -1,0 +1,127 @@
+html, body {
+	height: 100%; /*чтобы футер прижать к низу*/	
+}
+
+#container {
+	min-height: 100%;		/*чтобы футер прижать к низу*/
+	position: relative;  /*чтобы футер прижать к низу*/
+	min-width: 980px; /*ширина=ширина макета+небольшие отступы (для теней) по краям // перекрываем overflow из-за которого отсутствует горизонтальная полоса при приближении "ctrl +"*/
+	  /*если у контента другой цвет - вырезать полоску*/
+	overflow: hidden;
+}
+
+#header_wrapper {
+	background: url("header_wrap.png") top repeat-x;
+	position: relative;
+	z-index: 1000;
+}
+header {
+	width: 970px;
+	height: 161px;
+	margin: 0 auto;
+	background: url("header_bg.png") top no-repeat;
+	position: relative;
+	z-index: 100;          /*для уха*/
+}
+/*Ухо*/
+header:before {
+	content: "header_before";
+	text-indent: -8000px;
+	overflow: hidden;
+	position: absolute;
+	z-index: 150;
+	width: 319px;
+	height: 161px;
+	left: -319px;
+	top: 0px;
+	background: url("header_left.png") top no-repeat;
+}
+
+header:after {
+	content: "header_after";
+	text-indent: -8000px;
+	overflow: hidden;
+	position: absolute;
+	z-index: 150;
+	width: 400%;
+	height: 161px;
+	right: -400%;
+	top: 0px;
+	background: url("header_right.png") top repeat-x;
+}
+
+
+#main_wrapper {
+	padding-bottom: 103px; /* = высоте футера*/
+}
+#main {
+	width: 980px;
+	margin: 0 auto;
+}
+#main:after { /*clearfix для sidebar*/
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+#footer_wrapper {
+	width: 100%;
+	position: absolute;
+	z-index: 10; /*не помню для чего :)*/
+	left: 0;
+	bottom: 0;
+	background:  url("footer_wrap.png") bottom repeat-x;
+}
+footer {
+	width: 990px;
+	height: 103px; /* также не забыть изменить padding-bottom у #main_wrapper=height*/
+	margin: 0 auto;
+	position: relative;
+	z-index: 100; 
+	background: url("footer_bg.png") bottom no-repeat;
+}
+/*Ухо*/
+footer:before {
+	content: "footer_before";
+	text-indent: -8000px;
+	overflow: hidden;
+	position: absolute;
+	z-index: 150;
+	width: 132px;
+	height: 103px;
+	left: -132px;
+	top: 0px;
+	background: url("footer_left.png") bottom no-repeat;
+}
+
+footer:after {
+	content: "footer_after";
+	text-indent: -8000px;
+	overflow: hidden;
+	position: absolute;
+	z-index: 150;
+	width: 400%;
+	height: 103px;
+	right: -400%;
+	top: 0px;
+	background: url("footer_right.png") bottom repeat-x;
+}
+
+/*#sidebar1 {
+	float:left;
+	width: 200px;
+	background: #1155CC;
+}*/
+/*если есть sidebar справа, также см. #content*/
+#sidebar2 { 
+	float:right;
+	width: 324px; 
+}
+
+
+#content {
+/*	margin-left: 200px;		/*если есть sidebar1 слева*/
+	margin-right: 344px; 	/*если есть sidebar справа*/
+}
